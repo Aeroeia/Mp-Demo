@@ -17,6 +17,5 @@ public class MybatisConfig {
         //添加分页查询
         mybatisPlusInterceptor.addInnerInterceptor(paginationInnerInterceptor);
         return mybatisPlusInterceptor;
-
     }
 }

@@ -122,6 +122,7 @@ public class IuserServiceImpl  extends ServiceImpl<UserMapper,User> implements I
         Integer status = queryDTO.getStatus();
         Integer minBalance = queryDTO.getMinBalance();
         Integer maxBalance = queryDTO.getMaxBalance();
+
         //分页条件
         Page<User> page = queryDTO.toMpPage(OrderItem.desc("create_time"));
         //条件查询
